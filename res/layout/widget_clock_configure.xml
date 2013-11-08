@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical" >
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<RadioGroup android:id="@+id/clock_configure_RadioGroup"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RadioButton android:id="@+id/clock_configure_am_RadioButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/clock_configure_am"
+				/>
+			<RadioButton android:id="@+id/clock_configure_pm_RadioButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/clock_configure_pm"
+				/>
+		</RadioGroup>
+		<Spinner
+			android:id="@+id/clock_configure_hours_Spinner" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:entries="@array/clock_configure_hours"
+			/>
+		<Spinner
+			android:id="@+id/clock_configure_mins_Spinner" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:entries="@array/clock_configure_mins" 
+			/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<ToggleButton
+			android:id="@+id/clock_configure_alarm_ToggleButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textOn="@string/clock_configure_set"
+			android:textOff="@string/clock_configure_reset"
+			android:checked="false"
+			android:onClick="onToggleButtonClick"
+			/>
+		<CheckBox
+			android:id="@+id/clock_configure_repeat_CheckBox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/clock_configure_repeat"
+			/>
+
+	</LinearLayout>
+	<Button
+		android:id="@+id/clock_configure_ok_Button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/common_OKButton"
+		android:onClick="onClockConfigureOKButtonClick"
+		/>
+
+</LinearLayout>

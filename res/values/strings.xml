@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">くまモン時計ウィジェット</string>
+    <string name="common_OKButton">OK</string>
+    <string name="clock_widget_analog">くまモンアナログ時計ウィジェット</string>
+    <string name="clock_widget_digital">くまモンデジタル時計ウィジェット</string>
+    <string name="clock_configure_am">AM</string>
+    <string name="clock_configure_pm">PM</string>
+    <string name="clock_configure_set">セット</string>
+    <string name="clock_configure_reset">リセット</string>
+    <string name="clock_configure_repeat">繰り返し</string>
+
+    <string-array name="clock_configure_hours">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="clock_configure_mins">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+
+    <string name="clock_alarm_stop">停止</string>
+
+</resources>
